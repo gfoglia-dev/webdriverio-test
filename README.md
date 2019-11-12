@@ -1,5 +1,5 @@
-# My first Automation Practice! (⌐■_■)
-### Endava Coding Club Testing - Automation Practice
+## Endava Coding Club Testing - Automation Practice
+### My first Automation Practice! (⌐■_■)
 
 Automated tests are designed for automationpractice.com website.
 
