@@ -28,4 +28,4 @@ describe('User Story 005 - My Account screen', () => {
         expect(myAcc.buttonHome.isDisplayed()).toEqual(true);
         naviSec.logout();
     })
-})
+}) 

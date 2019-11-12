@@ -68,4 +68,4 @@ describe('User Story 006 - Login', () => {
         naviSec.logout();
     })
 
-})
+}) 

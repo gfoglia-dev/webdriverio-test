@@ -32,4 +32,4 @@ describe('User Story 001 - Authentication Screen', () => {
             expect(loginPage.forgotPwd.isDisplayed()).toEqual(true);
             expect(loginPage.submitBtn.isDisplayed()).toEqual(true);
     })
-})
+}) 

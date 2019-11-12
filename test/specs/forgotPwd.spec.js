@@ -38,4 +38,4 @@ describe('User Story 007 - Forgot Password', () => {
         pwdPage.retrieveButton.click();
         expect(pwdPage.pwdLegend.getText()).toEqual('A confirmation email has been sent to your address: asdasd@mail.com');
     })
-})
+}) 

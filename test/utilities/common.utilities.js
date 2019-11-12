@@ -16,7 +16,7 @@ module.exports = {
  *  Generates a string of X 'A' characters 
  *  to test Max length inputs
  *  on text boxes ~ 
- */    
+ */     
 
     maxChar32 : function () {
 

@@ -31,6 +31,6 @@ class myAcc {
         accessCreate.submitAccInfo();
     }
 
-}
+} 
 
 export default new myAcc()

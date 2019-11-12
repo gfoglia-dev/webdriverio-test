@@ -59,4 +59,4 @@ describe('User Story 008 - Order History', () => {
         expect(myOrderHis.shopCartTitle.getText()).toEqual('Your shopping cart');   //verifies actual page through navigation_page
         naviSec.logout();
     })
-})
+}) 

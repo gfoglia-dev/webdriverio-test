@@ -23,4 +23,4 @@
     "chromedriver": "^78.0.1",
     "wdio-chromedriver-service": "^5.0.2"
   }
-}
+} 
