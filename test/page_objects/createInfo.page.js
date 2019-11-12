@@ -88,10 +88,10 @@ class accessCreate {
                         i++; 
                         cond = true                                            
                     } else {
-                        i = i+13;
+                        i = i+32;
                         cond = false;
                     }               
-            } while (i < 13);
+            } while (i < 32);
             if (cond = true) {
                 return true
             } else {
