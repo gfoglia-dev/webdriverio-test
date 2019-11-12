@@ -2,17 +2,17 @@ import loginPage from '../page_objects/auth.page'
 import creationSec from '../page_objects/create.page'
 import utl from '../utilities/common.utilities'
 
-describe('User Story 002 - Create Account', () => {             //Test case: "Verify access to Authentication screen" already made in login.spec
+describe('User Story 002 - Create Account', () => {                         //Test case: "Verify access to Authentication screen" already made in login.spec
     
     it('verify if create account form exists', () => {
         loginPage.open();
-            browser.pause(2000);                                    //without the pause, isDisplayed() was giving out false instead of true
+            browser.pause(2000);                                            //without the pause, isDisplayed() was giving out false instead of true
         expect(creationSec.createForm.isDisplayed()).toBe(true);
     })
 
     it('verify default content of email address text box', () => {
         loginPage.open();
-        expect(creationSec.emailCreate.getValue()).toEqual('');
+        expect(creationSec.emailCreate.getValue()).toEqual('');             //by default should be empty
     })
 
     it('verify trying to create account with existing email address', () => {
@@ -31,13 +31,7 @@ describe('User Story 002 - Create Account', () => {             //Test case: "Ve
             expect(creationSec.createBtn.isClickable()).toBe(true);
             creationSec.createAddress.setValue('OSCARDESTROYER');
             creationSec.submitCreate();
-            expect(creationSec.createRedMark.isDisplayed()).toBe(true);
-    /**
-     *  es un look&feel improvisado e incompleto (ya que no verifica estilos, solo contenido); sólo lo hice a modo de prueba, pero me gustaría que en el feedback me respondan
-     *  la duda de si es necesario automatizar un look&feel; o simplemente se hace manual; algunos compañeros a los que consulte estaban en la misma duda que yo
-     *  porque eso no había quedado muy claro en clases; en la intro de automation quedó cómo que era algo subjetivo y que se hace manual por lo general,
-     *  pero en practica de automation se mencionó si que era automatizable (yo no recuerdo si se referían a que SE PUEDE o si SE DEBE :X )
-     */ 
+            expect(creationSec.createRedMark.isDisplayed()).toBe(true);      //improvised look&feel (without styles verification)    
     })
 
     it('verify email address format validation - without @', () => {
@@ -72,7 +66,7 @@ describe('User Story 002 - Create Account', () => {             //Test case: "Ve
         loginPage.open();
         creationSec.createAddress.setValue(utl.emailRandom());
         creationSec.submitCreate();
-            browser.pause(2000);                                 //same case as the one above, isDisplayed() was giving out false instead of true
+            browser.pause(2000);                                             //same case as the one above, isDisplayed() was giving out false instead of true
         expect(creationSec.createPage.isDisplayed()).toBe(true);
     })
 })

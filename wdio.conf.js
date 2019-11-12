@@ -27,10 +27,11 @@ exports.config = {
         //'./test/specs/createEmail.spec.js',
         //'./test/specs/authScreen.spec.js',
         //'./test/specs/login.spec.js',
-        //'./test/specs/createAccount.spec.js',
+        //'./test/specs/persInfo.spec.js',
         //'./test/specs/accScreen.spec.js',
         //'./test/specs/forgotPwd.spec.js',
         //'./test/specs/orderScreen.spec.js',
+        //'./test/specs/yourAddress.spec.js',
         
         // 'path/to/excluded/files'
     ],
