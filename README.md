@@ -1,4 +1,4 @@
-## My first Automation Practice!
-# Endava Coding Club Testing - Automation Practice
+# My first Automation Practice! (⌐■_■)
+### Endava Coding Club Testing - Automation Practice
 
-All feedback is welcomed and much appreciated!
+All feedback is welcomed and much appreciated! 
