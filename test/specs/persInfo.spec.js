@@ -226,7 +226,7 @@ describe('User Story 003 - Create Account - Personal Info Area', () => {
     
     it('verify values of Date of Birth DAY dropdown', () => {
         loginPage.open();
-        creationSec.createAddress.setValue(utl.emailRandom());   //GABRIEL, YOU'RE THE BEST :D -- seriously though, I spent a whole evening trying out stuff and coming up with nothing...
+        creationSec.createAddress.setValue(utl.emailRandom());   //dropdown verification supplied by GabrielAlonso7 :D -- seriously though, I spent a whole evening trying out stuff and coming up with nothing...
         creationSec.submitCreate();                              //feedback supplier, if you have a better way to verify and validate a dropdown contents, PLEASE DO SHARE IT!
         expect((accessCreate.dayOptions.getText()).replace(/\s/g,'')).toEqual('-12345678910111213141516171819202122232425262728293031');
     })

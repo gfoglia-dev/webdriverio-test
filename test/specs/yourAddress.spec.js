@@ -33,12 +33,6 @@ describe('User Story 004 - Create Account - your Address Area', () => {
         accessCreate.completeReq();
         expect(accessCreate.addressFName.getText()).toEqual(accessCreate.clientFName.getText());
     })
-    /**
-     *  En caso de que se basen en los Test Case del "Automation Coding Test Cases" para la corrección:
-     *  Hay un error en el enunciado de las User Stories para la pagina de Automation Practice, que se arrastró a los Test Case que hicieron para que usemos todos los mismos; 
-     *  el "green check" y la "red mark" no aparecen en los campos de "Your Address"; esta explicito que si lo hacen en el enunciado, pero se debe haber arrastrado por Copy-Paste
-     *  Cuando testeamos manualmente en clase comprobamos que no existen las marcas en esa sección. * Aviso porque no van a estar los tests que usen solo eso de Expected, obviamente ¯\_(ツ)_/¯ *
-     */
 
     it('verify max length validation in Your Address - first name field', () => {
         loginPage.open();

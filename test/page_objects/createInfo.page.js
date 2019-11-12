@@ -75,7 +75,7 @@ class accessCreate {
     }
 
     /**
-     *      PROJECT: DROPDOWN VALUES - - - - changed it a lot...failed a lot, wouldn't work :( it rests here to remind me of my failure (?)
+     * PROJECT: DROPDOWN VALUES - tried many things, changed it a lot..failed a lot, wouldn't work :( it rests here to remind me of my failure (?) will keep trying to make it though
      */
 
     dropdownDayValues() {
@@ -85,7 +85,7 @@ class accessCreate {
                 var compare = index.getText();
                 console.log(compare);
                     if (compare != '') {
-                        i = i+1; 
+                        i++; 
                         cond = true                                            
                     } else {
                         i = i+13;
