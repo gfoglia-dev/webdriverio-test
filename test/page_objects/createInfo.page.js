@@ -73,31 +73,6 @@ class accessCreate {
             this.clientPhone.setValue('501-584-6455');
             this.addressAlias.setValue('Random Alias');
     }
-
-    /**
-     * PROJECT: DROPDOWN VALUES - tried many things, changed it a lot..failed a lot, wouldn't work :( it rests here to remind me of my failure (?) will keep trying to make it though
-     */
-
-    dropdownDayValues() {
-        let i = 0;
-        do  {
-                var index = (this.clientDay.selectByIndex(i));
-                var compare = index.getText();
-                console.log(compare);
-                    if (compare != '') {
-                        i++; 
-                        cond = true                                            
-                    } else {
-                        i = i+32;
-                        cond = false;
-                    }               
-            } while (i < 32);
-            if (cond = true) {
-                return true
-            } else {
-                return false
-            }
-     };
     
 }
 
